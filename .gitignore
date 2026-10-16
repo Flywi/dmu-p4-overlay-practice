@@ -1,0 +1,12 @@
+/.cache/
+/bin/
+/frontend/node_modules/
+/frontend/dist/
+/frontend/public/
+/qa/
+/archive/
+/release/
+/dist/
+/resource_windows_*.syso
+/.idea/
+/guide-extracted.txt

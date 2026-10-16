@@ -1,0 +1,257 @@
+.titlebar {
+  padding:10px 13px 7px;
+}
+.brand {
+  gap:8px;
+}
+.brand .star {
+  font-size:1.769231rem;
+}
+.brand strong {
+  font-size:1.153846rem;
+}
+.brand small {
+  font-size:0.769231rem;
+  letter-spacing:1px;
+  color:#91a8bd;
+}
+.preferences {
+  padding:4px 12px 7px;
+  gap:6px;
+}
+.preferences input {
+  width:48px;
+}
+.preferences label {
+  gap:5px;
+}
+.preferences button {
+  padding:5px 7px;
+}
+#status {
+  min-height:23px;
+  padding:4px 13px 6px;
+  font-size:0.769231rem;
+}
+.scroll {
+  padding:0 12px 9px;
+  min-height:0;
+}
+.record-guide {
+  font-size:0.769231rem;
+  color:#b9c8d9;
+  display:flex;
+  justify-content:space-between;
+  margin:1px 0 8px;
+  gap:8px;
+}
+.record-guide span {
+  color:#899bb1;
+}
+.section-title {
+  margin:9px 0 5px;
+  font-size:0.846154rem;
+}
+.section-title>span {
+  font-size:0.692308rem;
+  color:var(--accent);
+  background:#8ee6c810;
+  padding:1px 4px;
+  border-radius:3px;
+}
+.section-title small {
+  font-size:0.692308rem;
+  color:#91b9b1;
+}
+.card {
+  padding:4px 9px;
+  border-radius:8px;
+}
+.inline-fields {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-height:32px;
+}
+.inline-fields .input-row {
+  min-height:0;
+  padding:0;
+  border:0;
+  gap:5px;
+  flex:none;
+}
+.row-label {
+  font-size:0.769231rem;
+  white-space:nowrap;
+}
+.choices {
+  gap:3px;
+}
+.choices button {
+  font-size:0.846154rem;
+  min-width:27px;
+  padding:4px 6px;
+  border-radius:5px;
+}
+.secondary-fields {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:3px 12px;
+}
+.secondary-fields .input-row {
+  min-height:30px;
+  padding:2px 0;
+  border:0;
+  gap:5px;
+}
+.secondary-fields .choices button {
+  font-size:0.769231rem;
+  padding:4px 5px;
+}
+.secondary-fields#personal-inputs {
+  grid-template-columns:1fr;
+}
+.secondary-fields#personal-inputs .input-row {
+  justify-content:flex-start;
+  gap:12px;
+}
+.tip {
+  font-size:0.692308rem;
+  line-height:1.7;
+  margin-top:8px;
+}
+footer {
+  padding:7px 12px;
+  font-size:0.692308rem;
+}
+body.editor #lock,body.editor .results {
+  display:none;
+}
+body.result-view .scroll,body.result-view #show-results,body.result-view #reset {
+  display:none;
+}
+.results {
+  margin:0 11px;
+  padding-bottom:6px;
+  flex:1;
+  min-height:0;
+  overflow-y:auto;
+  scrollbar-width:thin;
+  scrollbar-color:#ffffff25 transparent;
+}
+.results-heading {
+  display:flex;
+  align-items:center;
+  gap:5px;
+  margin:1px 0 5px;
+  font-size:0.769231rem;
+  color:#a9bfd0;
+}
+.results-heading strong {
+  margin-right:auto;
+  font-weight:500;
+}
+.results-heading button {
+  font-size:0.923077rem;
+  padding:2px 8px;
+}
+.results-heading button:disabled {
+  opacity:.3;
+}
+.round-result {
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+  width:100%;
+  text-align:left;
+  padding:5px 6px;
+  border:1px solid transparent;
+  border-radius:6px;
+  background:none;
+  color:#d4e0ec;
+}
+.round-result.current {
+  border-color:#8ee6c83a;
+  background:#8ee6c80b;
+}
+.round-label {
+  flex:0 0 39px;
+  font-size:0.846154rem;
+  color:#8ee6c8;
+  line-height:1.8;
+}
+.round-content {
+  min-width:0;
+}
+.round-main {
+  display:block;
+  font-size:1rem;
+  line-height:1.65;
+  font-weight:600;
+}
+.round-content small {
+  display:block;
+  font-size:0.769231rem;
+  line-height:1.6;
+  color:#9eafc4;
+}
+#flood-result {
+  font-size:0.769231rem;
+  line-height:1.6;
+  color:#9fb3c5;
+  margin:6px 6px 0;
+}
+body.result-view #status {
+  font-size:0.692308rem;
+  border-top:1px solid #ffffff0d;
+  padding-top:5px;
+}
+@media(max-width:420px) {
+  .inline-fields {
+    gap:9px;
+  }
+  .choices button {
+    min-width:25px;
+    padding:4px 5px;
+  }
+  .preferences {
+    gap:4px;
+  }
+  .preferences button {
+    font-size:0.692308rem;
+  }
+  .preferences label {
+    font-size:0.769231rem;
+  }
+  .preferences input {
+    width:36px;
+  }
+  .round-result {
+    gap:6px;
+  }
+  .round-main {
+    font-size:1rem;
+  }
+  .round-content small {
+    font-size:0.692308rem;
+  }
+  .round-label {
+    font-size:0.769231rem;
+    flex-basis:35px;
+  }
+  footer {
+    flex-direction:column;
+    gap:2px;
+  }
+  .secondary-fields {
+    gap:2px 8px;
+  }
+}
+
+/* Text scaling can wrap content without widening either overlay window. */
+.inline-fields { flex-wrap:wrap; row-gap:6px; padding-top:4px; padding-bottom:4px; }
+.round-label { flex-basis:3rem; }
+.round-content { overflow-wrap:anywhere; }
+.brand { flex-wrap:wrap; min-width:0; }
+.window-actions { flex-shrink:0; }
+footer { flex-wrap:wrap; }
